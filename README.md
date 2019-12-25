@@ -34,3 +34,6 @@ These are the things I want to implement in this project
 
 [12:44pm]
 Christmas feast is ready! I started the navbar and set up some of my framework so far.
+
+[3:30pm]
+I just finished the first draft of the navbar and showcase. I was stuck for a while on the overlay trying to get the text to NOT be transparent. I just had to keep trying for a while untill I figured it out. 
