@@ -1,0 +1,56 @@
+@import 'config';
+@import 'utilities';
+
+// General Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: $dark;
+}
+
+li {
+  list-style: none;
+}
+
+// Showcase
+
+// Navbar
+  #navbar {
+    background: $secondary-light;
+    height: 6rem;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      margin-right: .5rem;
+
+      a {
+        padding: 1rem;
+
+        &:hover {
+          background: $secondary-med;
+        }
+      }
+    }
+}
+
+

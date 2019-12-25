@@ -1,0 +1,44 @@
+// Margin  
+.m-1 { margin: 1rem; }
+.m-2 { margin: 2rem; }
+.m-3 { margin: 3rem; }
+.my-1 { margin: 1rem 0; }
+.my-2 { margin: 2rem 0; }
+.my-3 { margin: 3rem 0; }
+
+// Padding
+.p-1 { padding: 1rem; }
+.p-2 { padding: 2rem; }
+.p-3 { padding: 3rem; }
+.py-1 { padding: 1rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
+
+// Container
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// Buttons
+.btn {
+  padding: .7rem 2rem;
+  margin: 1rem 0;
+  border: none;
+  cursor: pointer;
+
+  &-primary {
+    background: $secondary-med;
+    color: #fff;
+  }
+
+  &-light {
+    background: $primary-light;
+    color: $dark;
+  }
+
+  &-dark {
+    background: $dark;
+    color: $primary-light;
+  }
+}
