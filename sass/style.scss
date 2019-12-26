@@ -12,6 +12,7 @@ html,
 body {
   font-family: 'Rubik', sans-serif;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 a {
@@ -103,6 +104,40 @@ li {
       margin-bottom: 3rem;
       text-shadow: $primary-dark 0px 10px 10px;
     }
+  } 
+}
+
+// Info Section
+#home-info {
+  background: $secondary-light;
+  text-align: center;
+
+  .water-play-info, 
+  .water-war-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   }
-  
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem;
+    line-height: 2;
+
+    h2 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+
+    li {
+      font-size: 1.5rem;
+    }
+  }
+  img {
+    width: 100%;
+  }
 }

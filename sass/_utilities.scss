@@ -20,6 +20,17 @@
   margin: 0 auto;
 }
 
+.flex-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+// Box
+.box {
+  padding: 2rem;
+  margin: 0 .5rem;
+}
+
 // Buttons
 .btn {
   padding: .7rem 2rem;
