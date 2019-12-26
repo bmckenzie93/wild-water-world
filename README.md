@@ -37,3 +37,6 @@ Christmas feast is ready! I started the navbar and set up some of my framework s
 
 [3:30pm]
 I just finished the first draft of the navbar and showcase. I was stuck for a while on the overlay trying to get the text to NOT be transparent. I just had to keep trying for a while untill I figured it out. 
+
+[10:30pm]
+I added images to the github repo for this and now my uber slow internet is having the hardest time pulling the updates... Whatever I am going to try and work on this without the new images for now.
