@@ -40,3 +40,7 @@ I just finished the first draft of the navbar and showcase. I was stuck for a wh
 
 [10:30pm]
 I added images to the github repo for this and now my uber slow internet is having the hardest time pulling the updates... Whatever I am going to try and work on this without the new images for now.
+
+# 12/26/19
+[5:30pm]
+I didnt do a good job at clocking in and out today but I worked for about 4 hours on the home page. moving things around and trying differant layouts and images. I'm liking how it is coming out, now I need to style the buttons and work on the footer before moving on to another html page.

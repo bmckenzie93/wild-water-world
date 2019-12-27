@@ -119,32 +119,26 @@ img {
   color: $dark;
 
   .about {
-    &-info {
-      background: $med
-    }
-
-    &-images {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 1rem;
-      background: $dark;
-      min-height: 300px;
+    &-box-set {
+      display: flex;
 
       .img-box {
-        background: $dark;
-
-        &:nth-child(odd) h3 {
-          background: $dark;
-          color: $light;
-        }
-
-        &:nth-child(even) h3 {
-          background: $secondary-light
-        }
+        flex: 1;
 
         img {
-        height: 250px;
+          min-height: 300px;
+          height: 100%;
         }
+      }
+
+      .img-info {
+        flex: 1;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background: $dark;
+        color: $light;
       }
     }
   }
@@ -152,8 +146,8 @@ img {
 
 // Call To Action
 #cta {
-  background: $dark;
-  color: $light;
+  background: $light;
+  color: $dark;
 
   p {
     margin-bottom: 3rem;
