@@ -25,6 +25,14 @@
   justify-content: space-between;
 }
 
+.bottom-line {
+  height: 6px;
+  width: 10rem;
+  background: $primary-med;
+  margin: 1rem auto;
+  border-radius: 10px;
+}
+
 // Box
 .box {
   padding: 2rem;

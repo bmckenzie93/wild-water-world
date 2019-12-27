@@ -24,6 +24,10 @@ li {
   list-style: none;
 }
 
+img {
+  width: 100%;
+}
+
 
 // Showcase
 #showcase {
@@ -107,37 +111,78 @@ li {
   } 
 }
 
-// Info Section
-#home-info {
-  background: $secondary-light;
+// Home: About
+#about,
+#cta {
+  font-size: 2rem;
   text-align: center;
+  color: $dark;
 
-  .water-play-info, 
-  .water-war-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  .about {
+    &-info {
+      background: $med
+    }
+
+    &-images {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
+      background: $dark;
+      min-height: 300px;
+
+      .img-box {
+        background: $dark;
+
+        &:nth-child(odd) h3 {
+          background: $dark;
+          color: $light;
+        }
+
+        &:nth-child(even) h3 {
+          background: $secondary-light
+        }
+
+        img {
+        height: 250px;
+        }
+      }
+    }
+  }
+}
+
+// Call To Action
+#cta {
+  background: $dark;
+  color: $light;
+
+  p {
+    margin-bottom: 3rem;
   }
 
-  .info {
+  a {
+    font-size: 1.3rem;
+    padding: 1.1rem;
+    border-radius: 25px;
+
+    &:hover {
+        background: $primary-dark;
+        color: #fff;
+        transition: .3s ease-out;
+      }
+  }
+}
+
+// Main Footer
+#main-footer {
+  background: $secondary-light;
+  padding: 1rem;
+  
+  h4 {
+    font-size: 1rem;
+  }
+
+  .container {
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
-    padding: 2rem;
-    line-height: 2;
-
-    h2 {
-      font-size: 4rem;
-    }
-
-    p {
-      font-size: 1.3rem;
-    }
-
-    li {
-      font-size: 1.5rem;
-    }
-  }
-  img {
-    width: 100%;
   }
 }
