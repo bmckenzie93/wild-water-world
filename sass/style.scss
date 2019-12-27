@@ -48,11 +48,10 @@ img {
       margin-right: 1rem;
     }
 
-    a {
+    .nav-ul a {
       font-size: 1.3rem;
       padding: 1.1rem;
-      border-radius: 25px;
-
+      border-radius: 50px;
 
       &:hover,
       &.selected {
@@ -121,6 +120,7 @@ img {
   .about {
     &-box-set {
       display: flex;
+      max-height: 450px;
 
       .img-box {
         flex: 1;
@@ -140,6 +140,9 @@ img {
         background: $dark;
         color: $light;
       }
+      h3 {
+        font-size: 3rem;
+      }
     }
   }
 }
@@ -152,18 +155,6 @@ img {
   p {
     margin-bottom: 3rem;
   }
-
-  a {
-    font-size: 1.3rem;
-    padding: 1.1rem;
-    border-radius: 25px;
-
-    &:hover {
-        background: $primary-dark;
-        color: #fff;
-        transition: .3s ease-out;
-      }
-  }
 }
 
 // Main Footer
@@ -172,11 +163,45 @@ img {
   padding: 1rem;
   
   h4 {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    padding-left: 1rem;
   }
 
   .container {
     display: flex;
     justify-content: space-evenly;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  a {
+    color: $dark;
+  }
+
+  li {
+    border-left: 2px solid $secondary-dark;
+    padding: 0 1rem 0 1rem;
+    transition: all .3s ease-out;
+
+    &:hover {
+    background: rgba(192, 86, 0, 0.416);
+    border-radius: 50px;
+    border-left: 4px solid $secondary-dark;
+    border-right: 4px solid $secondary-dark;
+    a {
+      color: $light;
+      }
+    }
+  } 
+
+  .footer-end {
+    text-align: center;
+    border-top: 1px dotted $secondary-dark;
+    margin-top: 1em;
+    color: $dark;
   }
 }

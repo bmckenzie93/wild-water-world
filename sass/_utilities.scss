@@ -30,7 +30,7 @@
   width: 10rem;
   background: $primary-med;
   margin: 1rem auto;
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 // Box
@@ -43,24 +43,41 @@
 
 .btn {
   display: inline-block;
-  min-width: 3rem;
-  margin: 0 auto;
+  padding: 1rem 2rem;
+  margin: 5rem auto;
+  border-radius: 50px;
+  font-size: 2rem;
+  transition: all .3s ease;
 
   &-primary {
     @extend .btn;
     background: $secondary-med;
     color: #fff;
+
+    &:hover {
+      background: $primary-light;
+      color: $dark;
+    }
   }
 
   &-light {
     @extend .btn;
     background: $primary-light;
     color: $dark;
+
+    &:hover {
+      background: $primary-dark;
+      color: $light;
+    }
   }
 
   &-dark {
     @extend .btn;
     background: $dark;
     color: $primary-light;
+
+    &:hover {
+      background: $light;
+    }
   }
 }

@@ -9,7 +9,15 @@ I have been studying for about 6 months now and I want to put my skills to the t
 
 # 12/25/19
 [10:00am] Merry Christmas!
-These are the things I want to implement in this project
+These are the things I want to implement in this project :
+
+> Skills
+[] Form
+[x] Flexbox
+[] Grid
+[x] Transitions
+[] Model
+[] Responsive
 
 > Water Park 
 [] Water slides
@@ -32,6 +40,8 @@ These are the things I want to implement in this project
 [] Mixed Drinks
 [] "Eat and Drink on the Water" *Wait at least 30 min after eating to swim lol*
 
+
+
 [12:44pm]
 Christmas feast is ready! I started the navbar and set up some of my framework so far.
 
@@ -44,3 +54,11 @@ I added images to the github repo for this and now my uber slow internet is havi
 # 12/26/19
 [5:30pm]
 I didnt do a good job at clocking in and out today but I worked for about 4 hours on the home page. moving things around and trying differant layouts and images. I'm liking how it is coming out, now I need to style the buttons and work on the footer before moving on to another html page.
+
+# 12/27/19
+[8:30am]
+Good morning! So far this morning I finished pretty much everything on the home page except for styling the buttons, which I am going to do now. I am moving along at a good pace with this project so far. I am proud of how much I have learned and am able to exicute on my own!
+
+[9:13am]
+Finished with the home page styling!!! WoooHoo it looks great!
+Next up on this project I will make the "Get Wet" and "Food/Hotel" pages, then make it all responsive! I want to include a form and a model in this project as well.
