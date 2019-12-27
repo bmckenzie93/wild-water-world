@@ -16,7 +16,7 @@
 
 // Container
 .container {
-  max-width: 1200px;
+  max-width: $max-width;
   margin: 0 auto;
 }
 
@@ -48,11 +48,13 @@
   border-radius: 50px;
   font-size: 2rem;
   transition: all .3s ease;
+  border: 2px solid #fff;
 
   &-primary {
     @extend .btn;
     background: $secondary-med;
     color: #fff;
+    
 
     &:hover {
       background: $primary-light;
@@ -80,4 +82,18 @@
       background: $light;
     }
   }
+}
+
+// Text
+.section-title {
+  font-size: 3rem;
+  text-align: center;
+  color: $dark;
+  
+}
+
+.section-info {
+  font-size: 1.9rem;
+  text-align: center;
+  color: $dark;
 }

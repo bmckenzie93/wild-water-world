@@ -62,3 +62,6 @@ Good morning! So far this morning I finished pretty much everything on the home 
 [9:13am]
 Finished with the home page styling!!! WoooHoo it looks great!
 Next up on this project I will make the "Get Wet" and "Food/Hotel" pages, then make it all responsive! I want to include a form and a model in this project as well.
+
+[2:30pm]
+I got a lot of work done today. I finished the home page and got a huge chunck of the water play page finished as well. I am leaving off on the "Rides" section - I want to style the grid and colors differanyly than the "Slides" section when I return.

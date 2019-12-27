@@ -137,6 +137,7 @@ img {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        align-items: center;
         background: $dark;
         color: $light;
       }
@@ -147,7 +148,7 @@ img {
   }
 }
 
-// Call To Action
+// Home: Call To Action
 #cta {
   background: $light;
   color: $dark;
@@ -157,13 +158,171 @@ img {
   }
 }
 
+// Water Play : Showcase
+#water-play-showcase {
+  &-content {
+  height: calc(100vh - 5rem);
+  width: 100vw;
+  background: $primary-dark;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // Overlay
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/slide.jpg') no-repeat center center/cover;
+    opacity: 0.7;
+    }
+  }
+  &-info {
+    z-index: 1;
+    h2 {
+      font-size: 5rem;
+      text-shadow: $primary-dark 0px 10px 10px;
+    }
+    
+    p {
+      font-size: 2rem;
+      margin-bottom: 3rem;
+      text-shadow: $primary-dark 0px 10px 10px;
+    }
+  } 
+}
+
+// Swimming
+#swimming {
+  // Slides
+  .slide-grid-area {
+    background-color: $dark;
+
+    .slide-grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 2rem;
+      max-width: $max-width;
+      margin: 0 auto;
+    }
+
+    .slide-grid-box {
+      background: $primary-dark;
+      color: $light;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+
+      &-text {
+        padding: 2rem 1rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+
+      &:nth-child(even) {
+        background: $light;
+        color: $dark;
+      }
+
+      &:nth-child(1) {
+        grid-column: 1 / span 4;
+        flex-direction: row;
+
+        img {
+          flex: 1;
+          max-width: 50%;
+        }
+      }
+
+      &:nth-child(8) {
+        grid-column: 3 / span 2;
+      }
+    }
+  }
+
+  // Rides
+  .ride-grid-area {
+    background-color: $dark;
+
+    .ride-grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 2rem;
+      max-width: $max-width;
+      margin: 0 auto;
+    }
+
+    .ride-grid-box {
+      background: $primary-dark;
+      color: $light;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+
+      &-text {
+        padding: 2rem 1rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+
+      &:nth-child(even) {
+        background: $light;
+        color: $dark;
+      }
+
+      &:nth-child(1) {
+        grid-column: 1 / span 4;
+        flex-direction: row;
+
+        img {
+          flex: 1;
+          max-width: 50%;
+        }
+      }
+
+      &:nth-child(8) {
+        grid-column: 3 / span 2;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
 // Main Footer
 #main-footer {
   background: $secondary-light;
-  padding: 1rem;
+  padding-top: 1rem;
   
   h4 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-left: 1rem;
   }
 
@@ -186,6 +345,7 @@ img {
     border-left: 2px solid $secondary-dark;
     padding: 0 1rem 0 1rem;
     transition: all .3s ease-out;
+    font-size: .9rem;
 
     &:hover {
     background: rgba(192, 86, 0, 0.416);
@@ -203,5 +363,6 @@ img {
     border-top: 1px dotted $secondary-dark;
     margin-top: 1em;
     color: $dark;
+    
   }
 }
