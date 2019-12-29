@@ -65,3 +65,7 @@ Next up on this project I will make the "Get Wet" and "Food/Hotel" pages, then m
 
 [2:30pm]
 I got a lot of work done today. I finished the home page and got a huge chunck of the water play page finished as well. I am leaving off on the "Rides" section - I want to style the grid and colors differanyly than the "Slides" section when I return.
+
+# 12/28/19
+[5:15pm]
+I am taking a break today but of corse I snuck in a few minutes to get some code in lol. I styled the water play page a bit just now, adding padding to the some sections and alternating the color scheme of the sections. I still want to switch up the grid for the ride section and get a new picture or two for it.

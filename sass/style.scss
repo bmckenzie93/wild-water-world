@@ -202,12 +202,12 @@ img {
 #swimming {
   // Slides
   .slide-grid-area {
-    background-color: $dark;
+    background-color: $primary-med;
 
     .slide-grid-container {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-gap: 2rem;
+      grid-gap: 4rem 2rem;
       max-width: $max-width;
       margin: 0 auto;
     }
@@ -240,6 +240,11 @@ img {
       &:nth-child(1) {
         grid-column: 1 / span 4;
         flex-direction: row;
+        padding: 3rem;
+        h3 {
+          font-size: 3rem; 
+          text-align: center;
+        }
 
         img {
           flex: 1;
@@ -249,13 +254,17 @@ img {
 
       &:nth-child(8) {
         grid-column: 3 / span 2;
+        h3 {
+          text-align: center;
+          font-size: 3rem;
+        }
       }
     }
   }
 
   // Rides
   .ride-grid-area {
-    background-color: $dark;
+    background-color: $primary-dark;
 
     .ride-grid-container {
       display: grid;
@@ -266,7 +275,7 @@ img {
     }
 
     .ride-grid-box {
-      background: $primary-dark;
+      background: $primary-med;
       color: $light;
       padding: 2rem;
       display: flex;
@@ -302,6 +311,10 @@ img {
 
       &:nth-child(8) {
         grid-column: 3 / span 2;
+        h3 {
+          text-align: center;
+          font-size: 3rem;
+        }
       }
     }
   }

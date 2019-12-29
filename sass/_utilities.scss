@@ -12,7 +12,7 @@
 .p-3 { padding: 3rem; }
 .py-1 { padding: 1rem 0; }
 .py-2 { padding: 2rem 0; }
-.py-3 { padding: 3rem 0; }
+.py-3 { padding: 5rem 0; }
 
 // Container
 .container {
@@ -89,11 +89,27 @@
   font-size: 3rem;
   text-align: center;
   color: $dark;
-  
+}
+
+.section-title-dark {
+  font-size: 3rem;
+  text-align: center;
+  color: $light;
+}
+
+.dark {
+  background: $dark;
+  color: $light;
 }
 
 .section-info {
   font-size: 1.9rem;
   text-align: center;
   color: $dark;
+}
+
+.section-info-dark {
+  font-size: 1.9rem;
+  text-align: center;
+  color: $light;
 }
