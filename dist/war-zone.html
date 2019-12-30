@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/75bc144dac.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Wild Water World | War Zone</title>
+</head>
+<body>
+  <!-- Header -->
+  <header id="showcase">
+    <nav id="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><h2>Wild Water World</h2></a>
+        </div>
+        <ul class="nav-ul">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="water-play.html">Water Play</a></li>
+          <li><a href="war-zone.html" class="selected">War Zone</a></li>
+          <li><a href="food-hotel.html">Food & Hotel</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="war-zone-showcase-content">
+      <div class="container">
+        <div id="showcase-info">
+          <h2>Water War Zone<br>-&-<br>Battle Field</h2>
+          <a href="#team-games" class="btn-primary">Lock & Load</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Team Games -->
+  <section id="team-games">
+    <div class="about-info py-3">
+      <div class="container">
+        <h2 class="section-title">
+          Water War Zone<br>-Free For All-
+        </h2>
+        <div class="bottom-line"></div>
+        <p class="section-info py-2">Water Guns and Water Balloons - No one is safe</p>
+        <p class="section-info">Test your skills in Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium temporibus pariatur odio dicta, libero magni quisquam, accusamus maiores deleniti laboriosam quo excepturi qui, autem recusandae! Nihil beatae iure laboriosam exercitationem.</p>
+      </div>
+    </div>
+
+    <!-- Water Balloon Images -->
+    <div class="img-trio">
+      <img src="./images/balloon-war.jpeg" alt="Water balloon popping">
+      <img src="./images/squirt.jpg" alt="Water gun">
+    </div>
+
+    <!-- Weekend Tournaments -->
+    <div class="tournaments">
+      <div class="py-3 dark">
+        <div class="container">
+          <h2 class="section-title-dark">Weekend War <br> Tournaments</h2>
+          <div class="bottom-line"></div>
+          <p class="section-info-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa laborum consequuntur porro cum tenetur at voluptatum sapiente laudantium magnam, consectetur voluptate a nihil ab eveniet sequi officia alias expedita voluptas delectus illo vitae temporibus optio vero similique. Molestias, doloribus eius.</p>
+          <p class="section-info-dark py-3">Sign-Up with your team up today!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tournament Form -->
+    <form id="tournament-form">
+      <div class="form-inputs">
+        <div class="form-instructions">
+          <h3>Weekend War Tournament Sign Up Form</h3>
+          <p>Fill out all fields in this form to sign your team up for a weekend war tournament.</p>
+          <p>All team members must be 13 years of age or older.</p>
+        </div>
+
+        <div class="form-section-1">
+          <h3>Select Tournament Date</h3>
+          <p>Our tournaments are held every on every Saturday and Sunday of each month</p>
+          <div class="form-group">
+            <label for="date">Tournament Date:</label>
+            <input type="date" name="date" id="date">
+          </div>
+          <div class="form-group">
+            <label for="team-name">Team Name:</label>
+            <input type="team-name" name="team-name" id="team-name">
+          </div>
+        </div>
+
+        <div class="form-section-2">
+          <h3>Team Captain Information</h3>
+          <p><small>All communication and payments will be handled through your Team Captain</small></p>
+          <div class="captain-info">
+            <div class="form-group">
+              <label for="captain-first">Team Captain - First Name:</label>
+              <input type="text" name="captain-first" id="captain-first">
+            </div>
+            <div class="form-group">
+              <label for="captain-last">Team Captain - Last Name:</label>
+              <input type="text" name="captain-last" id="captain-last">
+            </div>
+            <div class="form-group">
+              <label for="captain-age">Team Captain - Age:</label>
+              <input type="number" min="13" name="captain-age" id="captain-age">
+            </div>
+            <div class="form-group">
+              <label for="captain-phone">Team Captain - Phone Number:</label>
+              <input type="phone" name="captain-phone" id="captain-phone">
+            </div>
+            <div class="form-group">
+              <label for="captain-email">Team Captain - Email:</label>
+              <input type="email" name="captain-email" id="captain-email">
+            </div>
+            <div class="form-group">
+              <input type="button" value="Add Team Captain">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section-3">
+          <h3>Team Member Information</h3>
+          <div class="member-info">
+            <div class="form-group">
+              <label for="member-first">Team Member - First Name:</label>
+              <input type="text" name="member-first" id="member-first">
+            </div>
+            <div class="form-group">
+              <label for="member-last">Team Member - Last Name:</label>
+              <input type="text" name="member-last" id="member-last">
+            </div>
+            <div class="form-group">
+              <label for="member-age">Team member - Age:</label>
+              <input type="number" min="13" name="member-age" id="member-age">
+            </div>
+            <div class="form-group">
+              <input type="button" value="Add Team Member">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-roster">
+        <div class="roster-group">
+          <h3>Team Name:</h3>
+          <div class="teamName"></div>
+        </div>
+        <div class="roster-group">
+          <h3>Team Captain:</h3>
+          <div class="teamCaptain"></div>
+        </div>
+        <div class="roster-group">
+          <h3>Team Members:</h3>
+          <div class="teamMembers"></div>
+        </div>
+
+        <input type="submit" value="Sign Up My Team">
+        
+      </div>
+    </form>
+
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer id="main-footer">
+    <div class="container">
+      <div class="tickets-passes">
+        <h4>Tickets & Passes</h4>
+        <ul>
+          <li><a href="#">Tickets</a></li>
+          <li><a href="#">Season Passes</a></li>
+          <li><a href="#">Groups</a></li>
+          <li><a href="#">Passholder Perks</a></li>
+          <li><a href="#">Discounts</a></li>
+        </ul>
+      </div>
+      <div class="things-to-do">
+        <h4>Things To Do</h4>
+        <ul>
+          <li><a href="#">Attractions</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Birthday Partys</a></li>
+          <li><a href="#">Dining</a></li>
+          <li><a href="#">After Hours</a></li>
+        </ul>
+      </div>
+      <div class="plan-visit">
+        <h4>Plan A Visit</h4>
+        <ul>
+          <li><a href="#">Calendar & Hours</a></li>
+          <li><a href="#">Directions</a></li>
+          <li><a href="#">Parking</a></li>
+          <li><a href="#">Lockers & Rental</a></li>
+          <li><a href="#">Hotel & Packages</a></li>
+        </ul>
+      </div>
+      <div class="resort-info">
+        <h4>Resort Info</h4>
+        <ul>
+          <li><a href="#">About Wild Water World</a></li>
+          <li><a href="#">Park Map</a></li>
+          <li><a href="#">Employment</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ's</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-end py-1">
+      <small><p>Designed & Developed &copy; Brandon McKenzie 2019</p></small>
+    </div>
+  </footer>

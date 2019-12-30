@@ -12,35 +12,12 @@ I have been studying for about 6 months now and I want to put my skills to the t
 These are the things I want to implement in this project :
 
 > Skills
-[] Form
+[x] Form
 [x] Flexbox
-[] Grid
+[x] Grid
 [x] Transitions
 [] Model
 [] Responsive
-
-> Water Park 
-[] Water slides
-[] Lazy pool
-[] Pool areas
-
-> Water War Games
-[] Water baloon fight field
-[] Water gun arena
-
-> Aquarium
-[] Fish
-[] Turtles
-[] Sharks
-[] Squids
-
-> Resteraunt & Bar
-
-[] Seafood
-[] Mixed Drinks
-[] "Eat and Drink on the Water" *Wait at least 30 min after eating to swim lol*
-
-
 
 [12:44pm]
 Christmas feast is ready! I started the navbar and set up some of my framework so far.
@@ -69,3 +46,16 @@ I got a lot of work done today. I finished the home page and got a huge chunck o
 # 12/28/19
 [5:15pm]
 I am taking a break today but of corse I snuck in a few minutes to get some code in lol. I styled the water play page a bit just now, adding padding to the some sections and alternating the color scheme of the sections. I still want to switch up the grid for the ride section and get a new picture or two for it.
+
+# 12/30/19 
+[7:00am]
+Good morning. I'm up  early and I have some coffee brewing. Today I want to work on "Wild Water World" again, I think it is coming along nicely so far. I'm kind of at a blockage right now, I want to continue with the site but I dont want all of the pages to look the same, I want to display differant skills on each. I will look up some paintball websites for inspiration for my war zone page.
+
+[11:19am]
+Well now.. Im going to make the water war zone page a form to sign your team up for a weekend war tournament - and it turns out i'm going to have to implement javascript to acheive what I want from this page. This is good because i will get to practice and learn more javascript, but it is going to make this take longer than I expected. I will however have a chance to display my ability to use javascript, which will be a big plus for this portfolio piece as well as my learning! I am slightly intimidated and very excited. 
+
+I want the form to have:
+- ability to add names of team mates to a list for submission
+- date input with week days disabled
+
+The user will fill out the form and add names to a roster list for submission.
