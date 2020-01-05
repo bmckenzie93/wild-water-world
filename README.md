@@ -59,3 +59,10 @@ I want the form to have:
 - date input with week days disabled
 
 The user will fill out the form and add names to a roster list for submission.
+
+# 1/5/20 Sunday
+[10:00am]
+I am just tapping in real quick to log that I have been working down the street doing in-home care this last week and posting items to E-Bay to generate some more income. I have been listening to code videos but I have not been able to code myself in the past 5 days. It feels like it has been way longer lol. I dont want my skills to dull! I might have time to style the form real quick this morning.
+
+[10:46]
+I diddled around with the form styling just to play around with code today. I dont expect to keep anything that I did in the final form though. I actually think I will restyle this whole page to be honest. I will cap off this hour of code with a video or something but at least I got to touch code today!
