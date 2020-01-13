@@ -66,3 +66,8 @@ I am just tapping in real quick to log that I have been working down the street 
 
 [10:46]
 I diddled around with the form styling just to play around with code today. I dont expect to keep anything that I did in the final form though. I actually think I will restyle this whole page to be honest. I will cap off this hour of code with a video or something but at least I got to touch code today!
+
+
+# 1/11/20 Tuesday (8:30pm - 9:00pm) {
+  I was working on a udemy course for javascript when the internet went out from the snow up here on the mountain. I spent the last of my stydy time tinkering around with the copy on the war zone page. 
+}
