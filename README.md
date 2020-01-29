@@ -71,3 +71,8 @@ I diddled around with the form styling just to play around with code today. I do
 # 1/11/20 Tuesday (8:30pm - 9:00pm) {
   I was working on a udemy course for javascript when the internet went out from the snow up here on the mountain. I spent the last of my stydy time tinkering around with the copy on the war zone page. 
 }
+
+
+# 1/28/20 Tuesday (11:00pm) {
+  I re-designed and simplified the sign up form. I began to write the javascript for the adding a team member functionality as well. I will re-write this using a ul instead of a div with paragraphs in it next time.
+}

@@ -61,7 +61,6 @@
           <h2 class="section-title-dark">Sign-Up<br>Your Team Below</h2>
           <div class="bottom-line"></div>
           <p class="section-info-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa laborum consequuntur porro cum tenetur at voluptatum sapiente laudantium magnam, consectetur voluptate a nihil ab eveniet sequi officia alias expedita voluptas delectus illo vitae temporibus optio vero similique. Molestias, doloribus eius.</p>
-          <p class="section-info-dark py-3">All team members must be 13 years of age or older</p>
         </div>
       </div>
     </div>
@@ -69,72 +68,24 @@
     <!-- Tournament Form -->
     <form id="tournament-form">
       <div class="form-inputs">
-        <div class="form-instructions">
-          <h3>Weekend War Tournament Sign Up Form</h3>
-          <p>Fill out all fields in this form to sign your team up for a weekend war tournament.</p>
-          <p>All team members must be 13 years of age or older.</p>
-        </div>
-
         <div class="form-section-1">
-          <h3>Select Tournament Date</h3>
-          <p>Our tournaments are held every on every Saturday and Sunday of each month</p>
-          <div class="form-group">
-            <label for="date">Tournament Date:</label>
-            <input type="date" name="date" id="date">
-          </div>
-          <div class="form-group">
-            <label for="team-name">Team Name:</label>
-            <input type="team-name" name="team-name" id="team-name">
-          </div>
-        </div>
-
-        <div class="form-section-2">
-          <h3>Team Captain Information</h3>
-          <p><small>All communication and payments will be handled through your Team Captain</small></p>
-          <div class="captain-info">
+          <h3>Must add 5 Team Members to submit</h3>
+          <p id="member-count">0/5 Team Members</p>
+          <div class="member-info container">
             <div class="form-group">
-              <label for="captain-first">Team Captain - First Name:</label>
-              <input type="text" name="captain-first" id="captain-first">
-            </div>
-            <div class="form-group">
-              <label for="captain-last">Team Captain - Last Name:</label>
-              <input type="text" name="captain-last" id="captain-last">
-            </div>
-            <div class="form-group">
-              <label for="captain-age">Team Captain - Age:</label>
-              <input type="number" min="13" name="captain-age" id="captain-age">
-            </div>
-            <div class="form-group">
-              <label for="captain-phone">Team Captain - Phone Number:</label>
-              <input type="phone" name="captain-phone" id="captain-phone">
-            </div>
-            <div class="form-group">
-              <label for="captain-email">Team Captain - Email:</label>
-              <input type="email" name="captain-email" id="captain-email">
-            </div>
-            <div class="form-group">
-              <input type="button" value="Add Team Captain">
-            </div>
-          </div>
-        </div>
-
-        <div class="form-section-3">
-          <h3>Team Member Information</h3>
-          <div class="member-info">
-            <div class="form-group">
-              <label for="member-first">Team Member - First Name:</label>
+              <label for="member-first">First Name:</label>
               <input type="text" name="member-first" id="member-first">
             </div>
             <div class="form-group">
-              <label for="member-last">Team Member - Last Name:</label>
+              <label for="member-last">Last Name:</label>
               <input type="text" name="member-last" id="member-last">
             </div>
             <div class="form-group">
-              <label for="member-age">Team member - Age:</label>
+              <label for="member-age">Age:</label>
               <input type="number" min="13" name="member-age" id="member-age">
             </div>
             <div class="form-group">
-              <input type="button" value="Add Team Member">
+              <input type="button" value="Add Team Member" id="add-member-btn">
             </div>
           </div>
         </div>
@@ -142,19 +93,11 @@
 
       <div class="team-roster">
         <div class="roster-group">
-          <h3>Team Name:</h3>
-          <div class="teamName"></div>
-        </div>
-        <div class="roster-group">
-          <h3>Team Captain:</h3>
-          <div class="teamCaptain"></div>
-        </div>
-        <div class="roster-group">
-          <h3>Team Members:</h3>
-          <div class="teamMembers"></div>
+          <h3 id="member-count">0/5</h3>
+          <div class="memberList"></div>
         </div>
 
-        <input type="submit" value="Sign Up My Team">
+        <input type="submit" value="Sign Up My Team" id="sign-up-btn">
 
       </div>
     </form>
@@ -211,3 +154,5 @@
       <small><p>Designed & Developed &copy; Brandon McKenzie 2019</p></small>
     </div>
   </footer>
+  <script src="./scripts/main.js"></script>
+</body>

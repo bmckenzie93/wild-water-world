@@ -371,52 +371,49 @@ img {
 
 // Tournament Form
 #tournament-form {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   color: #fff;
   background: $med;
 
   label {
     display: block;
     font-size: 1.5rem;
+    padding: .3rem 0;
   }
 
   input {
     display: inline-block;
-    width: 100%;
+    text-align: center;
+    width: 50%;
     font-size: 1.5rem;
     padding: .5rem;
-    background: $primary-light;
-    border: none;
+    background: $light;
+    outline: none;
     margin-bottom: .5rem;
+
+    &:focus {
+      border: 3px solid $secondary-med;
+    }
   }
 }
 
 .form {
   &-inputs {
-    background: $primary-med;
-    flex: 1;
+    background: $light;
+    
   }
 
-  &-instructions {
-    background: $primary-dark;
-    text-align: center;
-    padding: 2rem;
-
-    h3 {
-      font-size: 2.2rem;
-    }
-    p {
-      font-size: 1.5rem;
-    }
+  h3 {
+    font-size: 2.2rem;
   }
+  p {
+    font-size: 1.5rem;
+  }
+  
 
-  &-section-1,
-  &-section-2,
-  &-section-3 {
+  &-section-1 {
     background: $dark;
     padding: 2rem;
+    text-align: center;
 
     h3, p {
       text-align: center;
@@ -427,9 +424,9 @@ img {
 }
 
 .team-roster {
-  flex: 1;
   background: $primary-dark;
   padding: .5rem 0;
+  text-align: center;
 }
 
 
