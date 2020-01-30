@@ -58,7 +58,7 @@
     <div class="tournaments">
       <div class="py-3 dark">
         <div class="container">
-          <h2 class="section-title-dark">Sign-Up<br>Your Team Below</h2>
+          <h2 class="section-title-dark">Sign-Up<br>5 Person Team Below</h2>
           <div class="bottom-line"></div>
           <p class="section-info-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa laborum consequuntur porro cum tenetur at voluptatum sapiente laudantium magnam, consectetur voluptate a nihil ab eveniet sequi officia alias expedita voluptas delectus illo vitae temporibus optio vero similique. Molestias, doloribus eius.</p>
         </div>
@@ -69,8 +69,7 @@
     <form id="tournament-form">
       <div class="form-inputs">
         <div class="form-section-1">
-          <h3>Must add 5 Team Members to submit</h3>
-          <p id="member-count">0/5 Team Members</p>
+          <h3>Add Each Member</h3>
           <div class="member-info container">
             <div class="form-group">
               <label for="member-first">First Name:</label>
@@ -84,21 +83,17 @@
               <label for="member-age">Age:</label>
               <input type="number" min="13" name="member-age" id="member-age">
             </div>
-            <div class="form-group">
-              <input type="button" value="Add Team Member" id="add-member-btn">
+            <div class="form-group py-2">
+              <input type="button" class="btn" value="Add Team Member" id="add-member-btn">
+            </div>
+            <div class="roster-group">
+              <h3 id="member-count" class="section-title-dark"><span id="counter">0</span>/5</h3>
+              <ul class="member-list"></ul>
+              <input type="submit" class="btn-secondary" value="Sign Up My Team" id="sign-up-btn">
             </div>
           </div>
+          
         </div>
-      </div>
-
-      <div class="team-roster">
-        <div class="roster-group">
-          <h3 id="member-count">0/5</h3>
-          <div class="memberList"></div>
-        </div>
-
-        <input type="submit" value="Sign Up My Team" id="sign-up-btn">
-
       </div>
     </form>
 

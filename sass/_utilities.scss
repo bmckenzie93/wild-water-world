@@ -82,6 +82,11 @@
       background: $light;
     }
   }
+
+  &-secondary {
+    @extend .btn;
+    background: $primary-dark;
+  }
 }
 
 // Text

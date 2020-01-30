@@ -76,3 +76,9 @@ I diddled around with the form styling just to play around with code today. I do
 # 1/28/20 Tuesday (11:00pm) {
   I re-designed and simplified the sign up form. I began to write the javascript for the adding a team member functionality as well. I will re-write this using a ul instead of a div with paragraphs in it next time.
 }
+
+# 1-29-20 (4:30pm) {
+  I looked into a front end course at lane college that would take a year to complete... I can get a job in that kind of time! Here we go.
+
+  I got so much done in javscript today, I am really proud of myself. I was able to code the functionality of adding team members to a list and counting them whenever one is added or removed. There is also a limit of 5 team members implemented. There is some validation as well. I am so proud of myself, I know that I am really learning.
+}

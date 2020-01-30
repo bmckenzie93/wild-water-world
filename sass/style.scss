@@ -427,12 +427,29 @@ img {
   background: $primary-dark;
   padding: .5rem 0;
   text-align: center;
+  min-height: 300px;
 }
 
+.roster-group {
+  background: $primary-med;
+  width: 80%;
+  margin: 0 auto;
+}
 
+.member-plaque {
+  display: flex;
+  align-items: center;
+  background-color: $primary-dark;
+  border-bottom: 1px dotted $primary-med;
 
+  span {
+    flex: 8;
+  }
 
-
+  a {
+    flex: 2;
+  }
+}
 
 // Main Footer
 #main-footer {
