@@ -13,15 +13,6 @@ addMemberBtn.addEventListener('click', addMember);
 // Remove Team Member Event
 memberList.addEventListener('click', removeMember);
 
-// Count Team Members
-function countMembers() {
-  const newMembers = document.querySelectorAll('.member-plaque');
-
-  for(i=0; i < memberList.length; i++){
-    newMembers.push(newMember[i]);
-  }
-  counter.innerHTML = newMembers.length;
-}
 
 // Add Member function
 function addMember(e) {
@@ -67,3 +58,12 @@ function removeMember(e) {
   countMembers();
 }
 
+// Count Team Members function
+function countMembers() {
+  const newMembers = document.querySelectorAll('.member-plaque');
+
+  for(i=0; i < memberList.length; i++){
+    newMembers.push(newMember[i]);
+  }
+  counter.innerHTML = newMembers.length;
+}
