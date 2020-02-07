@@ -1,69 +1,126 @@
-// Get UI Variables
-const firstName = document.querySelector('#member-first');
-const lastName = document.querySelector('#member-last');
-const age = document.querySelector('#member-age');
-const addMemberBtn = document.querySelector('#add-member-btn');
-const counter = document.querySelector('#counter');
-const memberList = document.querySelector('.member-list');
-const signUpBtn = document.querySelector('#sign-up-btn');
+class Member {
+  constructor(firstName, lastName, age) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.age = age;
+  }
+}
 
-// Add Team Member Event
-addMemberBtn.addEventListener('click', addMember);
+class UI {
+  addMember(member) {
+    const memberList = document.querySelector('.member-list');
 
-// Remove Team Member Event
-memberList.addEventListener('click', removeMember);
+    if(memberList.children.length < 5) {
+      const li = document.createElement('li');
+      li.className = 'py-1 section-title-dark member-plaque';
 
+      const closeLink = document.createElement('a');
+      closeLink.className = 'section-info-dark'
 
-// Add Member function
-function addMember(e) {
-  if(firstName.value === '' || lastName.value === '' || age.value === ''){
-    alert('Please fill all fields');
+      const closeIcon = document.createElement('i');
+      closeIcon.className = 'far fa-times-circle remove';
+      closeLink.appendChild(closeIcon);
+      memberList.appendChild(li);
+
+      const memberName = document.createElement('span');
+      memberName.className = 'member-name';
+      memberName.appendChild(document.createTextNode(`${member.firstName} ${member.lastName}, ${member.age}`));
+
+      li.appendChild(memberName);
+      li.appendChild(closeLink);
+      memberList.appendChild(li);
+      document.querySelector('#counter').innerHTML = memberList.children.length;
+    } else {
+      alert('Team Member Limit Reached: (5 of 5)');
+    }
   }
 
-  if(counter.innerHTML < 5) {
-    const newMember = document.createElement('li');
-    newMember.className = 'py-1 section-title-dark member-plaque';
+  clearFields() {
+    document.querySelector('#member-first').value = '';
+    document.querySelector('#member-last').value = '';
+    document.querySelector('#member-age').value = '';
+  }
 
-    const closeLink = document.createElement('a');
-    closeLink.className = 'section-info-dark'
+  removeMember(target) {
+    if(target.classList.contains('remove')) {
+      target.parentElement.parentElement.remove();
+      document.querySelector('#counter').innerHTML = document.querySelector('.member-list').children.length;
+    }
+  }
+}
 
-    const closeIcon = document.createElement('i');
-    closeIcon.className = 'far fa-times-circle remove';
-    closeLink.appendChild(closeIcon);
-    memberList.appendChild(newMember);
+class Store {
+  static getMembers() {
+    let members;
+    if(localStorage.getItem('members') === null) {
+      members = [];
+    } else {
+      members = JSON.parse(localStorage.getItem('members'));
+    }
+    return members;
+  }
 
-    const memberName = document.createElement('span');
-    memberName.className = 'member-name';
-    memberName.appendChild(document.createTextNode(`${firstName.value} ${lastName.value}, ${age.value}`));
+  static displayMembers() {
+    const members = Store.getMembers();
 
-    newMember.appendChild(memberName);
-    newMember.appendChild(closeLink);
+    members.forEach(function(member) {
+      const ui = new UI;
+      ui.addMember(member);
+    });
+  }
 
-    countMembers();
+  static addMember(member) {
+    const members = Store.getMembers();
 
-    firstName.value = '';
-    lastName.value = '';
-    age.value = '';  
+    members.push(member);
+
+    localStorage.setItem('members', JSON.stringify(members));
+  }
+
+  static removeMember(target) {
+    const members = Store.getMembers();
+    console.log(target);
+
+
+  }
+}
+
+// Event: Display Members from Local Storage
+document.addEventListener('DOMContentLoaded', Store.displayMembers);
+
+// Event: Add Team Member
+document.querySelector('#add-member-btn').addEventListener('click', function(e) {
+  // Get values
+  const firstName = document.querySelector('#member-first').value,
+        lastName = document.querySelector('#member-last').value,
+        age = document.querySelector('#member-age').value;
+
+  // Validate Form: All Fields Complete
+  if(firstName === '' || lastName === '' || age === '') {
+  alert('Please fill in all fields..');
   } else {
-    alert('Team Member Limit Reached: (5 of 5)')
+
+    // Instantiate New Member
+    const member = new Member(firstName, lastName, age);
+    
+    // Instantiate New UI
+    const ui = new UI();
+
+    // Add New Member to Member List
+    ui.addMember(member);
+
+    // Add Member to Local Storage
+    Store.addMember(member);
+
+    // Clear Fields
+    ui.clearFields();
   }
-}
+});
 
-// Remove Team Member Function
-function removeMember(e) {
-  if(e.target.classList.contains('remove')) {
-    e.target.parentElement.parentElement.remove();
-  }
 
-  countMembers();
-}
-
-// Count Team Members function
-function countMembers() {
-  const newMembers = document.querySelectorAll('.member-plaque');
-
-  for(i=0; i < memberList.length; i++){
-    newMembers.push(newMember[i]);
-  }
-  counter.innerHTML = newMembers.length;
-}
+// Event: Delete Team Member from List
+document.querySelector('.member-list').addEventListener('click', function(e) {
+  const ui = new UI();
+  ui.removeMember(e.target);
+  Store.removeMember(e.target.indexOf)
+})

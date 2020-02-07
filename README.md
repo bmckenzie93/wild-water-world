@@ -82,3 +82,21 @@ I diddled around with the form styling just to play around with code today. I do
 
   I got so much done in javscript today, I am really proud of myself. I was able to code the functionality of adding team members to a list and counting them whenever one is added or removed. There is also a limit of 5 team members implemented. There is some validation as well. I am so proud of myself, I know that I am really learning.
 }
+
+# 2-2-20 (7:30pm) {
+  I finished a tutorial on how to persist data to local storage but the data that I have is coming from 3 input fields, not one. I think i need to get the value of the local storage key I am creating to be an object, so I am trying to figure out how.
+}
+
+# 2-3-20 (6:00pm) {
+  I just broke the application trying to make a member object alsk;jghlkahbaesjfhnbuwjh;whtg;iwhgtjdsfgnjkeahgaiwgh;asklghsjkgh;kaeshgtw;uiaghjsgfnfdsjghnjsghjtghjwghkja;gnjk;gnjughjkghruj;tghw
+
+  Im going to go back to the course because I feel like I am getting ahead of myself here. I just want these members to persist to local storage ugh!
+}
+
+# 2-6-2020 (7:30pm) {
+  I have been sudying how to create an object and use prototype methods to do things like add elemnets to the UI and clear fields. I think this is what I was trying to do on this but I want to come at it from a differant angle. I will add a new js. document and comment out this old one to see what I can do differantly.
+
+  Wow did I have a lot to learn... Im glad I am taking my time with this part of learning javascript. the Object in OOP is clearly essential to learn, as well as how to use prototypes and ES6 Classes version as well. 
+
+  Tomorrow I need to figure out how to remove a member from local storage.
+}
