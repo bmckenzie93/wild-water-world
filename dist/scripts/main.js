@@ -47,6 +47,14 @@ class UI {
       document.querySelector('#counter').innerHTML = document.querySelector('.member-list').children.length;
     }
   }
+
+  static submitTeam() {
+    if(document.querySelector('.member-list').children.length === 5) {
+      alert('Team signed up!');
+    } else {
+      alert('Team must have 5 members to sign up');
+    }
+  }
 }
 
 class Store {
@@ -79,9 +87,14 @@ class Store {
 
   static removeMember(target) {
     const members = Store.getMembers();
-    console.log(target);
+    members.forEach(function(member, index) {
+      console.log(`${member.firstName} ${member.lastName}, ${member.age}`)
+      if(`${member.firstName} ${member.lastName}, ${member.age}` === target) {
+        members.splice(index, 1);
+      }
+    });
 
-
+    localStorage.setItem('members', JSON.stringify(members));
   }
 }
 
@@ -117,10 +130,17 @@ document.querySelector('#add-member-btn').addEventListener('click', function(e) 
   }
 });
 
-
 // Event: Delete Team Member from List
 document.querySelector('.member-list').addEventListener('click', function(e) {
   const ui = new UI();
   ui.removeMember(e.target);
-  Store.removeMember(e.target.indexOf)
+
+  Store.removeMember(e.target.parentElement.previousElementSibling.textContent);
+  console.log(e.target.parentElement.previousElementSibling.textContent);
 })
+
+// Event: Sign Up 5 Person Team on Submit
+document.getElementById('tournament-form').addEventListener('submit', function(e) {
+  UI.submitTeam();
+  e.preventDefault();
+});

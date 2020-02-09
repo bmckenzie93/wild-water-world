@@ -100,3 +100,9 @@ I diddled around with the form styling just to play around with code today. I do
 
   Tomorrow I need to figure out how to remove a member from local storage.
 }
+
+# 2-9-2020 (10:00am) {
+  Today I have a good amount of time to work on this project! I plan to complete the functionality of the Tournament sign-up form, and work on the next page: Food & Hotel. I plan to use an API that I found with data on cocktails and mixed drinks, so I want to intergrate that into the page somehow.
+
+  I just completed the functionality of removing a team member from local storage when I remove them from the dom, and it was a lot of fun to think creatively on how to match the target to the member I wanted to splice out of the array. I really like this!
+}
