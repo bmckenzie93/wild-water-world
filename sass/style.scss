@@ -192,8 +192,8 @@ img {
   } 
 }
 
-// Swimming
-#swimming {
+// Swimming (grid area)
+#swimming, #night-club {
   // Slides
   .slide-grid-area {
     background-color: $primary-med;
@@ -485,6 +485,25 @@ img {
       text-shadow: $primary-dark 0px 10px 10px;
     }
   } 
+}
+
+// Drink Finder
+.drink-search {
+  width: 50%;
+}
+#drink-search {
+  display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    padding: .5rem;
+    background: $light;
+    outline: none;
+    margin-bottom: .5rem;
+
+    &:focus {
+      border: 3px solid $secondary-dark;
+    }
 }
 
 
