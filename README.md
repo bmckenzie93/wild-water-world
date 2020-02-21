@@ -106,3 +106,11 @@ I diddled around with the form styling just to play around with code today. I do
 
   I just completed the functionality of removing a team member from local storage when I remove them from the dom, and it was a lot of fun to think creatively on how to match the target to the member I wanted to splice out of the array. I really like this!
 }
+
+# 2-21-2020 (1:30pm) {
+  I am going to use a cocktail api to create a drink finder application page.
+
+  On my night club page i will have a section for the dance club that will have a slideshow of water night party's
+
+  Under that I will have the alcohol section.
+}
