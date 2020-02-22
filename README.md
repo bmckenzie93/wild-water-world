@@ -115,4 +115,9 @@ I diddled around with the form styling just to play around with code today. I do
   Under that I will have a cocktail finder to search our bar for your favorite cocktail.
 
   I also want a 21+ confirmation pop up before you view this page.
+
+  I messed around with this page a lot today and I have a direction I am wanting to go with it now. I will have 2 sections for the drink area. one to search a drink by name, and one to select a doptdown of an alcohol type and display its drinks in a grid below.
+  each drink has and id, name, category, glass, instructions, picture, ingredients, and measurements.
+
+  Next round I need to do the css for the grid area, I can keep the same one i did for the slides. I want to generate the html using JS for each grid item.
 }
