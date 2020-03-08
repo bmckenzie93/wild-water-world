@@ -121,3 +121,7 @@ I diddled around with the form styling just to play around with code today. I do
 
   Next round I need to do the css for the grid area, I can keep the same one i did for the slides. I want to generate the html using JS for each grid item.
 }
+
+# 2-8-2020 3:00am {
+  Lets do it.
+}
