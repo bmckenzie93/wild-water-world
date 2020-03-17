@@ -122,6 +122,16 @@ I diddled around with the form styling just to play around with code today. I do
   Next round I need to do the css for the grid area, I can keep the same one i did for the slides. I want to generate the html using JS for each grid item.
 }
 
-# 2-8-2020 3:00am {
+# 3-8-2020 3:00am {
   Lets do it.
+}
+
+# 3-16-2020 5:00pm {
+  I really want to finish up this project. I am going to add a simple sideshow, make it responsive, and call it done and move on.
+
+  [7:00pm]
+  I finished the slide show, now all I have left to do is clean up the code for all the pages - I changed some of the names of the pages that i need to fix - and make everything responsive. I MIGHT come back and make the drink finder application better but for now I think it is fine.
+  Looks like its all css from here!
+
+  [] Fix file names
 }

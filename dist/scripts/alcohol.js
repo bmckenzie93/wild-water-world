@@ -1,15 +1,29 @@
-class Cocktail {
-  constructor(id, name, category, glass, instruction, thumbnail, ingredients, measurements) {
-    this.id = id,
-    this.name = name,
-    this.category = category,
-    this.glass = glass,
-    this.instruction = instruction,
-    this.thumbnail = thumbnail,
-    this.ingredients = ingredients,
-    this.measurements = measurements;
+// Party Slideshow
+let i = 0;
+let partyImages = [];
+let time = 2000;
+
+
+partyImages[0] = './images/water-party-2.jpg';
+partyImages[1] = './images/dj.jpg';
+partyImages[2] = './images/dj-2.jpg';
+partyImages[3] = './images/dj-5.jpg';
+
+
+function changeImg() {
+  document.getElementById('imgSlide').src = partyImages[i];
+
+  if(i < partyImages.length - 1) {
+    i++;
+  } else {
+    i = 0;
   }
+
+  setTimeout('changeImg()', time);
 }
+
+window.onload = changeImg;
+
 
 // search drinks: event listner
 document.getElementById('drink-search').addEventListener('keyup', (e) => {
@@ -23,49 +37,25 @@ document.getElementById('drink-search').addEventListener('keyup', (e) => {
     document.getElementById('inject').innerHTML = '';
 
     drinkList.forEach((drink) => {
-        document.getElementById('inject').innerHTML += `
-      <div class="slide-grid-container">
-      <article class="slide-grid-box">
-        <img id="drink-image" src="${drink.strDrinkThumb}" alt="${drink.strDrink}">
-        <div class="slide-grid-box-text">
-          <h3 id="drink-name">
-          ${drink.strDrink}
-          </h3>
-          <p id="drink-ingredient">Category : ${drink.strCategory}</p> <br>
-          <div class="drink-description">
-            <p id="drink-description">${drink.strInstructions}</p>
-          </div>
+      document.getElementById('inject').innerHTML += `
+        <div class="slide-grid-container">
+          <article class="slide-grid-box">
+            <img id="drink-image" src="${drink.strDrinkThumb}" alt="${drink.strDrink}">
+            <div class="slide-grid-box-text">
+              <h3 id="drink-name">
+                ${drink.strDrink}
+              </h3>
+              <p id="drink-ingredient">Category : ${drink.strCategory}</p> <br>
+              <div class="drink-description">
+                <p id="drink-description">${drink.strInstructions}</p>
+              </div>
+            </div>
+          </article>
         </div>
-      </article>
-    </div>
-    <hr>
       `
 
-      
-      
-      
-      console.log(drink);
       const img = document.getElementById('drink-image');
       img.src = drink.strDrinkThumb;
     })
-    
   })
 });
-
-
-
-
-
-// .then(res => res.json())
-// .then(resData => {
-//   const rumDrinks = resData.drinks;
-//   console.log(rumDrinks);
-//   const rumImg = 
-//   rumDrinks.forEach(drink => {
-//     console.log(drink)
-//     const cocktail = new Cocktail(this.idDrink, this.strDrink, this.strCategory, this.strGlass, this.strInstructions, this.strThumb, this.strIngredient1, strMeasure1);
-//     console.log(cocktail)
-
-//   })
-
-// }) 
