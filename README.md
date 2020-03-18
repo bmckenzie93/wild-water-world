@@ -140,4 +140,7 @@ I diddled around with the form styling just to play around with code today. I do
   I am going to make the project responsive now. Throughout working on the project I have come to believe that I made a lot of the sizing of fonts and components in general too big, probably because I am developing on my mac, so I might adjust those in the process of doing my media queries as well. I am excited to see how it all comes together!
 
   So I have what I would consider 'widescreen' as my default sizing. I will scale down for 'normal' and 'mobile' screen sizes in my media queries.
+
+  [7:00pm]
+  I will start by resizing my widescreen settings, which are the settings that I originally designed. Once I get everything looking right I will move on to normal screen size, then mobile.
 }
