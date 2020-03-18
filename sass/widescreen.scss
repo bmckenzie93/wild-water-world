@@ -148,7 +148,7 @@ img {
   }
 }
 
-// Home: Call To Action
+// Call To Action
 #cta {
   background: $light;
   color: $dark;
@@ -357,24 +357,21 @@ img {
 }
 
 // Water Balloon Images
-.img-trio {
-  display: flex;
+.war-img {
+  background: $primary-dark;
+  padding: 2rem;
 
-
+  // Image
   img {
-    &:nth-child(1),
-    &:nth-child(2) {
-      flex: 1;
       max-height: 500px;
-      border: 30px solid $secondary-med;
-    }
+      border: 4rem solid $primary-med;
   }
 }
 
 
 // Tournament Form
 #tournament-form {
-  color: #fff;
+  color: $dark;
   background: $med;
 
   label {
@@ -393,20 +390,30 @@ img {
     outline: none;
     margin-bottom: .5rem;
 
+    
+
     &:focus {
-      border: 3px solid $secondary-med;
+      border: 3px solid $primary-dark;
     }
   }
+}
+
+#add-member-btn {
+  margin: 0;
+}
+
+#sign-up-btn {
+  margin: 2rem 0;
 }
 
 .form {
   &-inputs {
     background: $light;
-    
   }
 
   h3 {
     font-size: 2.2rem;
+    color: $dark;
   }
   p {
     font-size: 1.5rem;
@@ -414,7 +421,7 @@ img {
   
 
   &-section-1 {
-    background: $dark;
+    background: $med;
     padding: 2rem;
     text-align: center;
 
@@ -437,6 +444,8 @@ img {
   background: $primary-med;
   width: 80%;
   margin: 0 auto;
+  line-height: 1.1;
+  padding-bottom: 1rem;
 }
 
 .member-plaque {
