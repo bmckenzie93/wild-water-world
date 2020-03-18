@@ -137,10 +137,16 @@ I diddled around with the form styling just to play around with code today. I do
 }
 
 # 3-17-2020 {
+  [5:30pm]
   I am going to make the project responsive now. Throughout working on the project I have come to believe that I made a lot of the sizing of fonts and components in general too big, probably because I am developing on my mac, so I might adjust those in the process of doing my media queries as well. I am excited to see how it all comes together!
 
   So I have what I would consider 'widescreen' as my default sizing. I will scale down for 'normal' and 'mobile' screen sizes in my media queries.
 
   [7:00pm]
   I will start by resizing my widescreen settings, which are the settings that I originally designed. Once I get everything looking right I will move on to normal screen size, then mobile.
+
+  [9:30pm]
+  I tweeked the styles and sizing of all of the pages in this project for my widescreen (default) media query. I left off at the bottom of the night club page because I am thinking I am going to redo the drink finder app all over again. I want it to display better, maybe in grid format, and have differant functionality. 
+
+  From here I need to redo the drink finder application and do media querys for normal size and mobile size screens. 
 }
