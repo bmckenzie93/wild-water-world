@@ -464,7 +464,6 @@ img {
 }
 
 
-
 // Nightclub / Bar : Showcase
 #night-club-showcase {
   &-content {
@@ -509,6 +508,14 @@ img {
   }
 }
 
+
+// Alcohol Types
+.alcohol-types {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
 // Drink Finder
 .drink-search {
   text-align: center;
@@ -530,7 +537,9 @@ img {
     }
 }
 
-
+#center-btn {
+  text-align: center;
+}
 
 // Main Footer
 #main-footer {

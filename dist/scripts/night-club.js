@@ -25,7 +25,39 @@ function changeImg() {
 window.onload = changeImg;
 
 
-// search drinks: event listner
+// Search Drinks by Alcohol Type
+document.querySelector('.alcohol-types').addEventListener('click', (e) => {
+  fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${e.target.innerHTML}`)
+    .then(res => res.json())
+    .then(resData => {
+      const drinkList = resData.drinks; 
+  
+      document.getElementById('alcohol-types').innerHTML = '';
+  
+      drinkList.forEach((drink) => {
+        console.log(drink);
+        document.getElementById('alcohol-types').innerHTML += `
+          <div class="slide-grid-container">
+            <article class="slide-grid-box">
+              <img id="drink-image" src="${drink.strDrinkThumb}" alt="${drink.strDrink}">
+              <div class="slide-grid-box-text">
+                <h3 id="drink-name">
+                  ${drink.strDrink}
+                </h3>
+              </div>
+            </article>
+            <div class="container"><hr></div>
+          </div>
+        `
+  
+        const img = document.getElementById('drink-image');
+        img.src = drink.strDrinkThumb;
+      })
+    });
+})
+
+
+// search drinks by name
 document.getElementById('drink-search').addEventListener('keyup', (e) => {
   fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${e.target.value}`)
   .then(response => response.json())
@@ -59,3 +91,10 @@ document.getElementById('drink-search').addEventListener('keyup', (e) => {
     })
   })
 });
+
+// Close Menu
+document.querySelector('#close-menu').addEventListener('click', (e) => {
+  document.getElementById('alcohol-types').innerHTML = '';
+  document.getElementById('inject').innerHTML = '';
+  document.getElementById('drink-search').value = '';
+})

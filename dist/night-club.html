@@ -58,11 +58,11 @@
       </div>
     </div>
 
-    <!-- Drinks -->
+    <!-- Search Drinks  -->
     <div class="py-3">
       <div>
         <div class="container">
-          <h2 class="section-title">Search Your Favorite<br>Cocktail Below</h2>
+          <h2 class="section-title">Search Our Cocktail<br>Bar Below</h2>
           <div class="bottom-line"></div>
           <p class="section-info">Amazing complete bar with every drink Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti adipisci quod eaque explicabo nihil facilis.</p>
           <p class="section-info"></p>
@@ -70,18 +70,41 @@
       </div>
     </div>
 
-    <!-- Drink Finder Application -->
+    <!-- Search Drink by Alcohol Type -->
+    <div class="slide-grid-area py-3">
+      <div class="container" class="my-3">
+        <p class="section-title-dark" id="drink-select">Select your favorite drink</p>
+        <div class="alcohol-types">
+          <button class="btn-dark" id="gins">Gin</button>
+          <button class="btn-dark" id="vodkas">Vodka</button>
+          <button class="btn-dark" id="rums">Rum</button>
+          <button class="btn-dark" id="whiskeys">Whiskey</button>
+          <button class="btn-dark" id="tequilas">Tequila</button>
+          <button class="btn-dark" id="brandys">Brandy</button>
+        </div>
+        <p class="section-info-dark">or click <a href="#drink-search">HERE</a> to search by name</p>
+      </div>
+      
+      <div id="alcohol-types"></div>
+
+    </div>
+
+    <!-- Search Drink by Name -->
     <div class="slide-grid-area py-3">
       <div class="container" class="my-3">
         <div class="drink-search">
-          <p class="section-info">Search Here:</p>
-          <p><small>Example:  'Rum'</small></p>
+          <p class="section-info">Search Cocktail by Name:</p>
+          <p><small>Example:  'Rose'</small></p>
           <input type="text" id="drink-search" placeholder="Enter Cocktail Name" >
+
         </div>
+        
       </div>
       
       <div id="inject"></div>
-
+      <div class="container" id="center-btn">
+        <a href="#drink-select"><button class="btn-dark" id="close-menu">Close Drink Menu</button></a> 
+      </div>
     </div>
   </section>
 
