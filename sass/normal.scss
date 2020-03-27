@@ -1,15 +1,35 @@
 @import 'config';
 @import 'utilities';
 
-html,
-body {
-  display: block;
-}
-
 // Showcase
 #showcase {
   // Navbar
   .container {
-    
+    li {
+      margin-right: .5rem;
+    }
+
+    .nav-ul a {
+      font-size: 1.1rem;
+    }
+  }
+
+  #navbar {
+    .logo h2 {
+      font-size: 1.7rem;
+    }
+  }
+
+  // Showcase
+  &-info {
+    h2 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1.7rem;
+      margin-bottom: 1.5rem;
+    }
   }
 }
+
