@@ -150,3 +150,11 @@ I diddled around with the form styling just to play around with code today. I do
 
   From here I need to redo the drink finder application and do media querys for normal size and mobile size screens. 
 }
+
+# 3-26-2020 {
+  [4:30pm]
+  I just created a new section to search drinks by type of alcohol. I think it looks really nice.
+
+  [5:00pm]
+  Time to make my 'normal' media querie styleing. 
+}
