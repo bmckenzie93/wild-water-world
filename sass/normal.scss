@@ -1,5 +1,5 @@
 @import 'config';
-@import 'utilities';
+@import 'utilitiesNormal';
 
 // Showcase
 #showcase {
@@ -33,3 +33,27 @@
   }
 }
 
+// Home: About
+#about,
+#cta {
+  .about {
+    &-box-set {
+      max-height: 300px;
+
+      h3 {
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+
+// Main Footer
+#main-footer {
+  h4 {
+    font-size: .9rem;
+  }
+
+  li {
+    font-size: .7rem;
+  }
+}

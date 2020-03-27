@@ -1,5 +1,5 @@
 @import 'config';
-@import 'utilities';
+@import 'utilitiesWide';
 
 // General Styles
 * {
@@ -136,7 +136,7 @@ img {
         min-height: 300px;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         background: $dark;
         color: $light;
