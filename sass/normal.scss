@@ -103,6 +103,21 @@
   }
 }
 
+// Tournament Form
+#tournament-form {
+  label {
+    font-size: 1rem;
+  }
+}
+
+.form {
+  &-section-1 {
+    h3, p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
 // Main Footer
 #main-footer {
   h4 {
