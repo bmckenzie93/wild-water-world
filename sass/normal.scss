@@ -47,6 +47,62 @@
   }
 }
 
+// Water Play: Slides / Rides ( + Drink Search)
+#water-play, #night-club {
+
+  // Slides: Image Grid
+  .slide-grid-area {
+    
+    .slide-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    }
+
+    .slide-grid-box {
+
+      &:nth-child(1) {
+        grid-column: 1 / span 2;
+        flex-direction: column;
+        text-align: center;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      &:nth-child(8) {
+        grid-column: 1 / span 2;
+      }
+    }
+  }
+
+  // Rides
+  .ride-grid-area {
+
+    .ride-grid-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+      }
+  
+      .ride-grid-box {
+  
+        &:nth-child(1) {
+          grid-column: 1 / span 2;
+          flex-direction: column;
+          text-align: center;
+  
+          img {
+            max-width: 100%;
+          }
+        }
+  
+        &:nth-child(8) {
+          grid-column: 1 / span 2;
+        }
+      }
+  }
+}
+
 // Main Footer
 #main-footer {
   h4 {
