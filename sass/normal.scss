@@ -48,7 +48,7 @@
 }
 
 // Water Play: Slides / Rides ( + Drink Search)
-#water-play, #night-club {
+#water-play {
 
   // Slides: Image Grid
   .slide-grid-area {
@@ -115,6 +115,14 @@
     h3, p {
       font-size: 1.5rem;
     }
+  }
+}
+
+// Night Club 
+#night-club {
+
+  #alcohol-types {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

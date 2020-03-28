@@ -158,3 +158,7 @@ I diddled around with the form styling just to play around with code today. I do
   [5:00pm]
   Time to make my 'normal' media querie styleing. 
 }
+
+# 3-28-2020 {
+  I had originally liked the drink section's styleing to the grids I did for the water slide section - But I am now running into trouble re-styling It. I think I need to just give it its own styling. 
+}

@@ -192,8 +192,8 @@ img {
   } 
 }
 
-// Water Play : Slides / Rides ( + Drink Search)
-#water-play, #night-club {
+// Water Play : Slides / Rides
+#water-play {
 
   // Slides: Image Grid
   .slide-grid-area {
@@ -539,6 +539,43 @@ img {
 
 #center-btn {
   text-align: center;
+}
+
+#night-club {
+
+  .drink-grid-area {
+    background-color: $primary-med;
+    padding: 2rem;
+
+
+    #alcohol-types {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 2rem;
+      max-width: $max-width;
+      margin: 0 auto;
+    }
+
+    #inject {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-auto-rows: auto;
+      grid-gap: 2rem;
+      max-width: $max-width;
+      margin: 0 auto;
+
+    }
+    
+    .drink-grid-box {
+      background: $primary-dark;
+      color: $light;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      height: 100%
+
+    }
+  }
 }
 
 // Main Footer

@@ -37,17 +37,14 @@ document.querySelector('.alcohol-types').addEventListener('click', (e) => {
       drinkList.forEach((drink) => {
         console.log(drink);
         document.getElementById('alcohol-types').innerHTML += `
-          <div class="slide-grid-container">
-            <article class="slide-grid-box">
+            <article class="drink-grid-box">
               <img id="drink-image" src="${drink.strDrinkThumb}" alt="${drink.strDrink}">
-              <div class="slide-grid-box-text">
+              <div class="drink-grid-box-text">
                 <h3 id="drink-name">
                   ${drink.strDrink}
                 </h3>
               </div>
             </article>
-            <div class="container"><hr></div>
-          </div>
         `
   
         const img = document.getElementById('drink-image');
@@ -70,10 +67,10 @@ document.getElementById('drink-search').addEventListener('keyup', (e) => {
 
     drinkList.forEach((drink) => {
       document.getElementById('inject').innerHTML += `
-        <div class="slide-grid-container">
-          <article class="slide-grid-box">
+        <div class="drink-grid-container">
+          <article class="drink-grid-box">
             <img id="drink-image" src="${drink.strDrinkThumb}" alt="${drink.strDrink}">
-            <div class="slide-grid-box-text">
+            <div class="drink-grid-box-text">
               <h3 id="drink-name">
                 ${drink.strDrink}
               </h3>
