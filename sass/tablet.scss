@@ -71,8 +71,49 @@
   }
 }
 
+// Water Play: Slides / Rides
+#water-play {
+
+  // Slides: Image Grid
+  .slide-grid-area,
+  .ride-grid-area {
+
+    .slide-grid-container,
+    .ride-grid-container {
+      grid-template-columns: 1fr;
+    }
+
+    .slide-grid-box,
+    .ride-grid-box {
+
+      &:nth-child(1), 
+      &:nth-child(8) {
+        grid-column: 1 / span 1;
+        flex-direction: column;
+        text-align: left;
+        padding: 2rem;
+
+        h3 {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+          text-align: left;
+        }
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      &:nth-child(8) {
+        grid-column: 1 / span 1;
+      }
+    }
+  }
+}
+
 // Footer
 #main-footer {
+
   h4 {
     font-size: .8rem;
     margin-bottom: .2rem;
