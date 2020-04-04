@@ -1,6 +1,10 @@
 @import 'config';
 @import 'utilitiesNormal';
 
+body {
+  display: none;
+}
+
 // Showcase
 #showcase {
   // Navbar

@@ -1,6 +1,84 @@
 @import 'config';
-@import 'utilities';
+@import 'utilitiesTablet';
 
-body {
-  display: none;
+// Showcase
+#showcase {
+  // Navbar
+  .container {
+    .nav-ul a {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+  }
+
+  #navbar {
+    .logo h2 {
+      display: none;
+    }
+
+    ul {
+      width: 100%;
+      justify-content: space-evenly;
+    }
+  }
+
+  // Showcase
+  &-info {
+    h2 {
+      font-size: 3.5rem;
+    }
+
+    p {
+      margin-bottom: .5rem;
+    }
+  }
+}
+
+// Home: About
+#about,
+#cta {
+  .about {
+    &-box-set {
+      flex-direction: column;
+      
+      h3 {
+        font-size: 2rem
+      }
+
+      &:nth-child(3) {
+        .img-info {
+          background-color: $primary-light;
+          color: $dark;
+          border: 3px  solid $med;
+          
+          .btn-light {
+            background-color: $dark;
+            color: $light;
+
+            &:hover {
+              background: $med;
+              color: $dark;
+            }
+          }
+        }
+        
+      }
+
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+// Footer
+#main-footer {
+  h4 {
+    font-size: .8rem;
+    margin-bottom: .2rem;
+  }
+
+  a {
+    font-size: .7rem;
+  }
 }

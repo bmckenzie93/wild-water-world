@@ -1,0 +1,40 @@
+// Buttons
+
+.btn {
+  padding: .5rem 1rem;
+  margin: 1.5rem auto;
+  font-size: 1.2rem;
+
+  &-primary {
+    @extend .btn;
+  }
+
+  &-light {
+    @extend .btn;
+  }
+
+  &-dark {
+    @extend .btn;
+  }
+
+  &-secondary {
+    @extend .btn;
+  }
+}
+
+// Text
+
+.section-title {
+  font-size: 1.5rem;
+}
+
+.section-title-dark {
+  font-size: 1.5rem;
+}
+
+.section-info {
+  font-size: 1rem;
+}
+.section-info-dark {
+  font-size: 1rem;
+}

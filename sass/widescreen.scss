@@ -605,9 +605,11 @@ img {
 
   li {
     border-left: 2px solid $secondary-dark;
+    border-right: 4px solid $secondary-light;
     padding: 0 1rem 0 1rem;
     transition: all .3s ease-out;
     font-size: .9rem;
+
 
     &:hover {
     background: rgba(192, 86, 0, 0.416);

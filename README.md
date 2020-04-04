@@ -160,5 +160,14 @@ I diddled around with the form styling just to play around with code today. I do
 }
 
 # 3-28-2020 {
+  [11:00am]
   I had originally liked the drink section's styleing to the grids I did for the water slide section - But I am now running into trouble re-styling It. I think I need to just give it its own styling. 
+
+  [2:30pm]
+  I made the drink section it's own styling using the grid system's auto fit and minmax features. Now I just need to make mobile styling and i am complete!
+}
+
+# 4-4-2020 {
+  [2:30pm]
+  I'm doing the styling for tablet size. Lets focus and bang this out to completion!
 }
