@@ -1,10 +1,6 @@
 @import 'config';
 @import 'utilitiesNormal';
 
-body {
-  // display: none;
-}
-
 // Showcase
 #showcase {
   // Navbar
@@ -110,6 +106,10 @@ body {
 // Tournament Form
 #tournament-form {
   label {
+    font-size: 1rem;
+  }
+
+  input {
     font-size: 1rem;
   }
 }

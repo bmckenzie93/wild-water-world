@@ -170,4 +170,7 @@ I diddled around with the form styling just to play around with code today. I do
 # 4-4-2020 {
   [2:30pm]
   I'm doing the styling for tablet size. Lets focus and bang this out to completion!
+
+  [4:00pm]
+  Tablet sizing complete, now for phone size and then I am donezoe!
 }
