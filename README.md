@@ -174,3 +174,8 @@ I diddled around with the form styling just to play around with code today. I do
   [4:00pm]
   Tablet sizing complete, now for phone size and then I am donezoe!
 }
+
+# 4-5-2020 {
+  [11:30pm]
+  I got in a bit of code tonight, Completed the phone size media query. I am thinking I also want to make a model for the buy tickets now button after I finish making the rest of the pages responsive.
+}
