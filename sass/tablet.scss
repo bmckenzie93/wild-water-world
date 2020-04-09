@@ -6,6 +6,11 @@
 #showcase {
   // Navbar
   .container {
+    display: block;
+    text-align: center;
+    height: 100%;
+    z-index: 1;
+
     .nav-ul a {
       font-size: 1rem;
       padding: 1rem;
@@ -13,8 +18,10 @@
   }
 
   #navbar {
+    height: 7.5rem;
+
     .logo h2 {
-      display: none;
+      margin-bottom: 1rem;
     }
 
     ul {
@@ -24,9 +31,16 @@
   }
 
   // Showcase
+  &-content,
+  #war-zone-showcase-content,
+  #water-play-showcase-content,
+  #night-club-showcase-content {
+    height: calc(100vh - 7.5rem);
+  }
   &-info {
     h2 {
       font-size: 3.5rem;
+      margin-top: 2rem;
     }
 
     p {
@@ -128,10 +142,19 @@
   }
 }
 
-// Drink Finder
+// Night Club and Bar
+#night-club {
+  // Alcohol Types
+  .alcohol-types {
+    display: block;
+    text-align: center;
+  }
+
+  // Drink Finder
   #drink-search {
     font-size: 1rem;
   }
+}
 
 // Footer
 #main-footer {

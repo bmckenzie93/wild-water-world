@@ -179,3 +179,10 @@ I diddled around with the form styling just to play around with code today. I do
   [11:30pm]
   I got in a bit of code tonight, Completed the phone size media query. I am thinking I also want to make a model for the buy tickets now button after I finish making the rest of the pages responsive.
 }
+
+# 4-8-20 {
+  [8:30pm]
+  I just completed the last of my media queries, now I want to figure out where to take this project from here. I suppose I should get rid of the lorem text and make up some real content to make it look more presentable to regular people.
+
+  I also want to make a model that will pop up when I click the buy now button on the home page.
+}

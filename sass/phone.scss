@@ -43,7 +43,10 @@
   }
 
   // Showcase
-  &-content {
+  &-content,
+  #war-zone-showcase-content,
+  #water-play-showcase-content,
+  #night-club-showcase-content {
     height: calc(100vh - 11.5rem);
   }
 
@@ -103,6 +106,95 @@
   }
 }
 
+// Water Play: Slides / Rides
+#water-play {
+
+  // Slides: Image Grid
+  .slide-grid-area,
+  .ride-grid-area {
+
+    .slide-grid-container,
+    .ride-grid-container {
+      grid-template-columns: 1fr;
+    }
+
+    .slide-grid-box,
+    .ride-grid-box {
+
+      &:nth-child(1), 
+      &:nth-child(8) {
+        grid-column: 1 / span 1;
+        flex-direction: column;
+        text-align: left;
+        padding: 2rem;
+
+        h3 {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+          text-align: left;
+        }
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      &:nth-child(8) {
+        grid-column: 1 / span 1;
+      }
+    }
+  }
+}
+
+// Tournament Form
+#tournament-form {
+  .roster-group {
+    width: 100%;
+
+    .member-name {
+      font-size: 1.1rem;
+    }
+  }
+
+  .form-group {
+    input {
+      width: 100%;
+    }
+  }
+
+  h3 {
+  font-size: 1.5rem;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  input {
+    width: 60%;
+    font-size: 1rem;
+  }
+}
+
+// Night Club and Bar
+#night-club {
+  // Alcohol Types
+  .alcohol-types {
+    display: block;
+    text-align: center;
+  }
+
+  // Drink Finder
+  .drink-search {
+    width: 100%;
+      #drink-search {
+        font-size: 1rem;
+    }
+  }
+  
+}
+
+
 // Footer
 #main-footer {
 
@@ -130,5 +222,7 @@
     p {
       font-size: .7rem;
     }
+
+    margin-top: 0;
   }
 }
