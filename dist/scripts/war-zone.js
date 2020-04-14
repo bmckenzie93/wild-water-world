@@ -144,3 +144,4 @@ document.getElementById('tournament-form').addEventListener('submit', function(e
   UI.submitTeam();
   e.preventDefault();
 });
+

@@ -186,3 +186,7 @@ I diddled around with the form styling just to play around with code today. I do
 
   I also want to make a model that will pop up when I click the buy now button on the home page.
 }
+
+# 4-14-2020 {
+  Scratch the modal and copy writing, I am going to deploy this bad boy as is and move on! I plan on deploying it using Netlify for free and sending it to my buddy Eli for his feedback.
+}
